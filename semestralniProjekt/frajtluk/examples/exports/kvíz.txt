@@ -1,0 +1,35 @@
+
+
+  1) Největší stát světa (zaškrtněte pouze jednu odpověď)
+	  1) Kanada
+	  2) Rusko
+	  3) Čína
+	  4) USA
+
+
+  2) Seřaďte státy podle počtu obyvatel (od nejmenšího po největší)
+	    1) USA
+	    2) Kanada
+	    3) Indie
+	    4) Čína
+
+	   1) __
+	   2) __
+	   3) __
+	   4) __
+
+
+  3) Vyber státy Evropy (můžete zaškrtnout více odpovědí)
+	  1) Německo
+	  2) Makedonie
+	  3) USA
+	  4) Velká Britanie
+
+
+  4) Vyberte hlavní město Francie (zaškrtněte pouze jednu odpověď)
+	  1) Londýn
+	  2) Lyon
+	  3) Paříž
+	  4) Berlín
+
+

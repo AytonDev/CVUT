@@ -1,0 +1,65 @@
+
+Zadaní z progtestu:
+Kvízy
+Vytvořte program, který umožní vytvářet kvízy a testovat znalosti.
+Implementujte následující funkcionality:
+alespoň 3 různé druhy otázek
+alespoň 3 různé druhy odpovědí na otázky
+implementujte části (stránky) kvízu (na části je více otázek, kvíz má více částí)
+implementujte přechod mezi částmi sekvenčně a v závislosti na odpovědi
+uživatelské rozhraní pro tvorbu a vyplnění (a ohodnocení) kvízu
+export a import kvízu (a více kvízů)
+Použití polymorfismu (doporučené)
+druhy otázek: textová otázka, výběr jednoho, výběr více možností, seřazení možností, ...
+druhy odpovědí: textová odpověď (jedna možnost), více správných textových odpovědí, vypočtená hodnota, ...
+různé formáty: vykreslení do konzole, textový (tisknutelný - bez importu, tisknutelný s výsledky - bez importu, s možností importu zpět), binární, …
+
+Upřesnění
+
+Třída CPlayer: tato třída deklaruje hráče, každý hráč má jmeno, id.
+
+Třída CBaseQuestion: deklarace otázek. Otázka má metodu pro kontrolu odpovědi a přetížený operator pro výpis <<
+
+Typy otázek:
+
+Textová otázka:  Text s otázkou.  Odpověd: textová odpověď (pouze jedna správná odpověď) -  CTextQuestion
+
+Textová více možností odpovědi otázka:  Text s otázkou.  Odpověď: textová odpověď (více správných odpovědí) -  CTextManyQuestion
+
+Ano - Ne otázka: Text s otázkou.  Odpověď: Ano Ne -  CTrueFalseQuestion
+
+Výběr jednoho:  Text s otázkou.  Odpověď: nabídka odpovědí (pouze jedna správná odpověď) -  CPickOneQuestion
+
+Výběr více:  Text s otázkou.  Odpověď: nabídka odpovědí (pouze jedna správná odpověď) -  CPickManyQuestion
+
+Seřazení :  Text s otázkou a texty k seřazení .  Odpověď: čísla textů ve správném pořadí -  COrderQuestion
+
+
+
+Stránkování:
+
+Každá otazka má atributy:
+m_Page - stránka na, kterou otázka patří
+m_DependOnLastAnswer - závislost otázky na předchozí odpovědi
+m_NextQuestion - další otázka podle odpovědi
+
+První stránka kvízu bude po každé stejná. Další stránky mohou obsahovat otázky podle předchozích odpovědí a to následovně:  Zobrází se veškeré odpovědi, které nejsou závislé (mají atribut m_DependOnLastAnswer == false), dále se zobrazí otázky s m_Id == m_NextQuestion
+
+
+Práce s daty
+
+FileManger - tato třída se stará o správu souborů. Načítání souboru s kvízem nebo výsledky hráčů. Přídání/Mazaní/Upravení otázky. Vytvoření nového kvízu.
+
+Formaty budou CSV a TXT. 
+
+
+Využítí Polymorfismu
+
+Otázky
+Hra
+Práce se soubory
+
+
+
+
+

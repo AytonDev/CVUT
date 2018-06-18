@@ -1,0 +1,9 @@
+58781;1;17077;Název školy na které studuješ;d;0;1;0;0;0
+58781;1;96093;Oblíbený předmět;x;0;1;0;0;0
+58781;3;54125;Studuješ na VŠ?;1;0;1;0;0;0
+58781;3;4612;Planuješ se podat přihlášku na VŠ?;1;0;2;1;54125;2
+58781;1;38292;Název školy kam chceš dát přihlášku;skola;0;3;1;4612;1
+58781;2;38358;Název fakulty, na které studuješ; 1;fakulta;0;2;1;54125;1
+58781;1;18216;Čím se chceš po škole zabývat?;aktivita;0;3;1;4612;2
+58781;4;35320;Seřaďte státy podle počtu obyvatel;4;Francie;USA;Indie ;Čina;4;1;2;3;4;3;3;0;0;0
+58781;3;89984;Je Toronto hlavní město Kanady?;0;3;4;0;0;0
